@@ -1,0 +1,42 @@
+// Employee.java
+// This class will have 3 instance variables of first name, last name,
+// and monthly salary of an employee. Also set and get methods
+// to access each of these variables.
+
+public class Employee {
+  
+  // Instance variables.
+  String firstName;
+  String lastName;
+  double monthlySalary;
+
+  // Constructor to initialize the variables.
+  public Employee(String firstName, String lastName, double monthlySalary) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.monthlySalary = monthlySalary; }
+  
+  // Set method for firstName
+  public void setfirstName(String firstName) {
+    this.firstName = firstName; }
+  
+  // Set method for lastName
+  public void setLastName(String lastName) {
+    this.lastName = lastName; }
+  
+  // Set method for monthlySalary
+  public void setMonthlySalary(double monthlySalary) {
+    this.monthlySalary = monthlySalary; }
+  
+  // Get method for firstName
+  public String getFirstName() {
+    return firstName; }
+  
+  // Get method for lastName
+  public String getLastName() {
+    return lastName; }
+  
+  // Get method for monthlySalary
+  public double getMonthlySalary() {
+    return monthlySalary; }
+}

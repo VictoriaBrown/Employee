@@ -1,0 +1,39 @@
+// EmployeeTest.java
+// This program creates 2 instances of the class Employee. It displays the annual salary, gives
+// a 10 % raise and then displays the annual salary of an Employee again.
+
+public class EmployeeTest {
+  
+  public static void main(String[] args) {
+    
+    // Instance variables
+    double monthlySal1;
+    double monthlySal2;
+    double yearlySal1;
+    double yearlySal2;
+    
+    // 2 objects of Employee
+    Employee employee1 = new Employee("Victoria", "Brown", 32000.00);
+    Employee employee2 = new Employee("Chris", "Brown", 320.99);
+    
+    // Create variables for the monthly salaries
+    monthlySal1 = employee1.getMonthlySalary();
+    monthlySal2 = employee2.getMonthlySalary();
+    
+    // Create yearly salaries variables
+    yearlySal1 = monthlySal1 * 12;
+    yearlySal2 = monthlySal2 * 12;
+    
+    // Print yearly salaries
+    System.out.println("Annual salary for Victoria Brown: " + yearlySal1);
+    System.out.println("Annual salary for Chris Brown: " + yearlySal2);
+    
+    // Give 10% raise to each of employee
+    yearlySal1 = yearlySal1 + 38400;
+    yearlySal2 = yearlySal2 + 385.19;
+    
+    // Print the new yearly salaries
+    System.out.println("Annual salary for Victoria Brown: " + yearlySal1);
+    System.out.println("Annual salary for Chris Brown: " + yearlySal2);
+  }
+}
